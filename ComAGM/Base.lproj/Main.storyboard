@@ -18,23 +18,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JmP-oB-VJ6">
-                                <rect key="frame" x="104" y="290" width="167" height="87"/>
+                                <rect key="frame" x="144.5" y="271" width="86" height="125"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOW-jK-gS2">
-                                        <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
-                                        <state key="normal" title="Получить информацию"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
+                                        <state key="normal" title="GET запрос"/>
                                         <connections>
                                             <action selector="pushButtonCom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxt-UW-wLX"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj4-Kn-Tgp">
+                                        <rect key="frame" x="0.0" y="38" width="86" height="30"/>
+                                        <state key="normal" title="Post запрос"/>
+                                        <connections>
+                                            <action selector="pushButtonCom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YXs-XF-rC3"/>
+                                            <action selector="tappedPost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yk5-gQ-SNh"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAS-J1-mBK">
-                                        <rect key="frame" x="0.0" y="38" width="167" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="76" width="86" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mo-vX-3F6">
-                                        <rect key="frame" x="0.0" y="66.5" width="167" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="104.5" width="86" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
