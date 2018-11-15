@@ -23,6 +23,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOW-jK-gS2">
                                         <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
                                         <state key="normal" title="Получить информацию"/>
+                                        <connections>
+                                            <action selector="pushButtonCom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxt-UW-wLX"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAS-J1-mBK">
                                         <rect key="frame" x="0.0" y="38" width="167" height="20.5"/>
@@ -46,6 +49,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="labelWorkButton" destination="hAS-J1-mBK" id="fEb-D8-x2I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
