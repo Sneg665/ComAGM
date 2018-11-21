@@ -48,7 +48,7 @@ let comParametr = "Hi"
         let parameters = ["username": "ivan", "massage" : "Hello Volodia"]
         var request = URLRequest(url: url) //Может тут надо задавать параметры выбрав другой метод
         request.httpMethod = "POST"
-        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options:[]) else { return}
         request.httpBody = httpBody
         
