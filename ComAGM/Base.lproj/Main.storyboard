@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qu2-6b-XwN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,106 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Гараж-->
+        <scene sceneID="iTZ-GL-xdG">
+            <objects>
+                <viewController id="5oL-1P-NqA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dUS-PH-m9J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpt-iM-KhU">
+                                <rect key="frame" x="121" y="367" width="92" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hwQ-0u-awb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Гараж" id="Oex-uM-bbq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozf-vg-akb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1226" y="-115"/>
+        </scene>
+        <!--Главная-->
+        <scene sceneID="M2k-50-Xnk">
+            <objects>
+                <tableViewController id="DPG-ep-Hq9" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="s38-M9-QwZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="N26-mf-0o9">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N26-mf-0o9" id="IGU-HP-uqV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DPG-ep-Hq9" id="pgO-Wo-pQy"/>
+                            <outlet property="delegate" destination="DPG-ep-Hq9" id="XwZ-ju-UMQ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Главная" image="house-outline (1)" id="B74-s7-XoB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3h-RC-UtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1226" y="-1549"/>
+        </scene>
+        <!--Мои заказы-->
+        <scene sceneID="Vcf-pa-Xdn">
+            <objects>
+                <viewController id="Viy-Sj-TPC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0df-ry-Pc1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAJ-Xw-F0x">
+                                <rect key="frame" x="101" y="323" width="178" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4dI-xI-61K"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Мои заказы" id="1C6-2Q-Tbx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Icy-4d-Wn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1226.4000000000001" y="-780.35982008995506"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hDe-8P-qVC">
+            <objects>
+                <tabBarController id="qu2-6b-XwN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9pd-T7-Din">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DPG-ep-Hq9" kind="relationship" relationship="viewControllers" id="e3s-ow-T83"/>
+                        <segue destination="Viy-Sj-TPC" kind="relationship" relationship="viewControllers" id="XhW-xL-bSl"/>
+                        <segue destination="5oL-1P-NqA" kind="relationship" relationship="viewControllers" id="A7h-IB-Wvm"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PoF-Cw-10J"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqA-ca-69f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2180" y="-449"/>
+        </scene>
+        <!--Admin-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ComAGM" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,13 +156,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Admin" id="2dE-0o-etb"/>
                     <connections>
                         <outlet property="labelWorkButton" destination="hAS-J1-mBK" id="fEb-D8-x2I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.59999999999999" y="56.221889055472268"/>
+            <point key="canvasLocation" x="-1916" y="436"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="house-outline (1)" width="32" height="32"/>
+    </resources>
 </document>
