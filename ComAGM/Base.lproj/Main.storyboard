@@ -102,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icy-4d-Wn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-287.19999999999999" y="-780.35982008995506"/>
+            <point key="canvasLocation" x="-1284" y="-878"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Gg6-Vh-itb">
@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iob-hX-sDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="-788"/>
+            <point key="canvasLocation" x="-242" y="-878"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hDe-8P-qVC">
@@ -134,11 +134,41 @@
                         <segue destination="5oL-1P-NqA" kind="relationship" relationship="viewControllers" id="A7h-IB-Wvm"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PoF-Cw-10J"/>
                         <segue destination="hmb-G0-5ZX" kind="relationship" relationship="viewControllers" id="8MK-NA-zAe"/>
+                        <segue destination="LS8-dy-nzM" kind="relationship" relationship="viewControllers" id="MtD-2r-MGc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqA-ca-69f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3169" y="-909"/>
+        </scene>
+        <!--Main Page-->
+        <scene sceneID="oR3-yQ-vod">
+            <objects>
+                <tableViewController id="vGI-Oq-tli" customClass="MainPage" customModule="ComAGM" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cbo-fw-RnI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GeneralCells" id="XR0-zV-iZt">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XR0-zV-iZt" id="oeF-tt-VX3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vGI-Oq-tli" id="7sk-Mc-qvI"/>
+                            <outlet property="delegate" destination="vGI-Oq-tli" id="pel-Jt-psu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="U4F-QJ-B1e"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcT-qV-jMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1284" y="-2243"/>
         </scene>
         <!--ListTVC-->
         <scene sceneID="HjQ-zj-dZZ">
@@ -229,11 +259,11 @@
             </objects>
             <point key="canvasLocation" x="-1916" y="436"/>
         </scene>
-        <!--Item-->
+        <!--Admin +-->
         <scene sceneID="DkN-pc-qy5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hmb-G0-5ZX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hFh-pk-Vbe"/>
+                    <tabBarItem key="tabBarItem" title="Admin +" id="hFh-pk-Vbe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v8k-uX-TSV">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -265,7 +295,29 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RE1-L7-rNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1226.4000000000001" y="-780.35982008995506"/>
+            <point key="canvasLocation" x="-2223" y="-878"/>
+        </scene>
+        <!--Главная-->
+        <scene sceneID="zaz-NR-vpd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LS8-dy-nzM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Главная" image="house-outline (1)" id="MMJ-wB-U3B"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MtW-VF-pzu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vGI-Oq-tli" kind="relationship" relationship="rootViewController" id="E1D-cs-bdx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fi-LQ-b2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2223" y="-2243"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="house-outline (1)" width="32" height="32"/>
+    </resources>
 </document>
