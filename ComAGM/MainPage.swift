@@ -9,10 +9,35 @@
 import UIKit
 
 class MainPage: UITableViewController {
-//var listNavigations = [Razdeli]()
+var listNavigations = [GeneralDescriptionCell]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        listNavigations += [
+            GeneralDescriptionCell(name: "Заказы",
+                    type: "",
+                    imagePath: "",
+                    info: ""),
+            
+            GeneralDescriptionCell(name: "Избранное",
+                    type: "",
+                    imagePath: "",
+                    info: ""),
+            
+            GeneralDescriptionCell(name: "Акции",
+                    type: "",
+                    imagePath: "",
+                    info: ""),
+            
+            GeneralDescriptionCell(name: "Адреса магазинов",
+                    type: "Computer",
+                    imagePath: "",
+                    info: ""),
+            
+            GeneralDescriptionCell(name: "Карта клиента",
+                    type: "",
+                    imagePath: "",
+                    info: ""),
+        ]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,7 +54,7 @@ class MainPage: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return listNavigations.count
     }
 
     
@@ -39,10 +64,16 @@ class MainPage: UITableViewController {
         // Configure the cell...
         // Заполняем ячейку данными
         //cell.imageView?.image       = product.getImage()
-        cell.textLabel?.text        = "KzkZ"
-        cell.detailTextLabel?.text  = "ddfv"//product.type
+        //cell.textLabel?.text        = "KzkZ"
+        //cell.detailTextLabel?.text  = "ddfv"//product.type
         
+        // Получаем объект Product под индексом равным значению indexPath.row
+        let product: GeneralDescriptionCell = self.listNavigations[indexPath.row]
         
+        // Заполняем ячейку данными
+        cell.imageView?.image       = product.getImage()
+        cell.textLabel?.text        = product.name
+        cell.detailTextLabel?.text  = product.type
         return cell
     }
     

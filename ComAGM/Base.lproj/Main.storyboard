@@ -130,11 +130,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="LS8-dy-nzM" kind="relationship" relationship="viewControllers" id="MtD-2r-MGc"/>
                         <segue destination="WbY-4e-0OD" kind="relationship" relationship="viewControllers" id="XhW-xL-bSl"/>
                         <segue destination="5oL-1P-NqA" kind="relationship" relationship="viewControllers" id="A7h-IB-Wvm"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PoF-Cw-10J"/>
                         <segue destination="hmb-G0-5ZX" kind="relationship" relationship="viewControllers" id="8MK-NA-zAe"/>
-                        <segue destination="LS8-dy-nzM" kind="relationship" relationship="viewControllers" id="MtD-2r-MGc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqA-ca-69f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,9 +149,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoAGM" id="gHJ-TI-MuG">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GeneralCells" id="XR0-zV-iZt">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XR0-zV-iZt" id="oeF-tt-VX3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -319,5 +323,6 @@
     </scenes>
     <resources>
         <image name="house-outline (1)" width="32" height="32"/>
+        <image name="logoAGM" width="363" height="56"/>
     </resources>
 </document>
