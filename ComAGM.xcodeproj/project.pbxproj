@@ -15,8 +15,9 @@
 		DE314CA0219D601700D2EF9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE314C9F219D601700D2EF9C /* AppDelegate.swift */; };
 		DE314CA2219D601700D2EF9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE314CA1219D601700D2EF9C /* ViewController.swift */; };
 		DE314CA5219D601700D2EF9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE314CA3219D601700D2EF9C /* Main.storyboard */; };
-		DE314CA7219D601900D2EF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE314CA6219D601900D2EF9C /* Assets.xcassets */; };
 		DE314CAA219D601900D2EF9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE314CA8219D601900D2EF9C /* LaunchScreen.storyboard */; };
+		DE46DA0F22267C7900CCC3E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE46DA0E22267C7900CCC3E6 /* Assets.xcassets */; };
+		DE46DA112226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46DA102226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +30,10 @@
 		DE314C9F219D601700D2EF9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE314CA1219D601700D2EF9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE314CA4219D601700D2EF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE314CA6219D601900D2EF9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE314CA9219D601900D2EF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE314CAB219D601900D2EF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE46DA0E22267C7900CCC3E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE46DA102226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSpisokTovarov.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +69,13 @@
 				DE314C9F219D601700D2EF9C /* AppDelegate.swift */,
 				DE314CA1219D601700D2EF9C /* ViewController.swift */,
 				DE2B62AD220C5D86001F05D5 /* MainPage.swift */,
+				DE46DA102226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift */,
 				DE2B62A7220B1950001F05D5 /* Product.swift */,
 				DE2B62AF220C69A0001F05D5 /* GeneralDescriptionCell.swift */,
 				DE2B62A3220AD274001F05D5 /* ListTVC.swift */,
 				DE314CA3219D601700D2EF9C /* Main.storyboard */,
 				DE2B62A5220AD4DA001F05D5 /* DetailVC.swift */,
-				DE314CA6219D601900D2EF9C /* Assets.xcassets */,
+				DE46DA0E22267C7900CCC3E6 /* Assets.xcassets */,
 				DE314CA8219D601900D2EF9C /* LaunchScreen.storyboard */,
 				DE314CAB219D601900D2EF9C /* Info.plist */,
 			);
@@ -138,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE314CAA219D601900D2EF9C /* LaunchScreen.storyboard in Resources */,
-				DE314CA7219D601900D2EF9C /* Assets.xcassets in Resources */,
+				DE46DA0F22267C7900CCC3E6 /* Assets.xcassets in Resources */,
 				DE314CA5219D601700D2EF9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +155,7 @@
 			files = (
 				DE2B62A4220AD274001F05D5 /* ListTVC.swift in Sources */,
 				DE2B62A6220AD4DA001F05D5 /* DetailVC.swift in Sources */,
+				DE46DA112226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift in Sources */,
 				DE2B62A8220B1950001F05D5 /* Product.swift in Sources */,
 				DE314CA2219D601700D2EF9C /* ViewController.swift in Sources */,
 				DE314CA0219D601700D2EF9C /* AppDelegate.swift in Sources */,
@@ -305,7 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T39ADMCJ3D;
 				INFOPLIST_FILE = ComAGM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T39ADMCJ3D;
 				INFOPLIST_FILE = ComAGM/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

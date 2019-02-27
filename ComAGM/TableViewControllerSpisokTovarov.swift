@@ -1,49 +1,18 @@
 //
-//  MainPage.swift
+//  TableViewControllerSpisokTovarov.swift
 //  ComAGM
 //
-//  Created by Владимир Уланов on 07.02.2019.
+//  Created by Владимир Уланов on 27.02.2019.
 //  Copyright © 2019 UlanovApp. All rights reserved.
 //
 
 import UIKit
 
-class MainPage: UITableViewController {
-var listNavigations = [GeneralDescriptionCell]()
+class TableViewControllerSpisokTovarov: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        listNavigations += [
-            GeneralDescriptionCell(name: "Поиск по каталогу",
-                                   type: "",
-                                   imagePath: "",
-                                   info: ""),
-            
-            GeneralDescriptionCell(name: "Заказы",
-                    type: "",
-                    imagePath: "",
-                    info: ""),
-            
-            GeneralDescriptionCell(name: "Избранное",
-                    type: "",
-                    imagePath: "",
-                    info: ""),
-            
-            GeneralDescriptionCell(name: "Акции",
-                    type: "",
-                    imagePath: "",
-                    info: ""),
-            
-            GeneralDescriptionCell(name: "Адреса магазинов",
-                    type: "Computer",
-                    imagePath: "",
-                    info: ""),
-            
-            GeneralDescriptionCell(name: "Карта клиента",
-                    type: "",
-                    imagePath: "",
-                    info: ""),
-            
-        ]
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -55,34 +24,23 @@ var listNavigations = [GeneralDescriptionCell]()
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return listNavigations.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GeneralCells", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        // Заполняем ячейку данными
-        //cell.imageView?.image       = product.getImage()
-        //cell.textLabel?.text        = "KzkZ"
-        //cell.detailTextLabel?.text  = "ddfv"//product.type
-        
-        // Получаем объект Product под индексом равным значению indexPath.row
-        let product: GeneralDescriptionCell = self.listNavigations[indexPath.row]
-        
-        // Заполняем ячейку данными
-        cell.imageView?.image       = product.getImage()
-        cell.textLabel?.text        = product.name
-        cell.detailTextLabel?.text  = product.type
+
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
