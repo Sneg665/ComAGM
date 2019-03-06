@@ -21,7 +21,7 @@ let comParametr = "Hi"
         labelWorkButton.text? = comParametr
         //let adress = "https://jsonplaceholder.typicode.com/posts"
         //let adress2 = "http://agm-1c-01/AGM_IOS/ws/request.1cws?wsdl"
-        let adress = "http://agm-1c-01/WEB2/odata/standard.odata/Catalog_%D0%9D%D0%BE%D0%BC%D0%B5%D0%BD%D0%BA%D0%BB%D0%B0%D1%82%D1%83%D1%80%D0%B0?$format=json"
+        let adress = "http://agm-1c-01/WEB2/odata/standard.odata/Catalog_Klient?$format=json"
         guard let url = URL(string: adress) else {return}
         let session = URLSession.shared
         session.dataTask(with: url) { (data, response, error) in
@@ -29,7 +29,7 @@ let comParametr = "Hi"
                 print(response)
             }
             guard let data = data else { return}
-            print(data)
+           print(data)
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 print(json)

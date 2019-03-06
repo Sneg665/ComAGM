@@ -163,7 +163,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="FlG-9E-Q2n" kind="push" id="5fS-Ua-zKB"/>
+                                    <segue destination="FlG-9E-Q2n" kind="push" id="V4i-dY-Cee"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -178,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="-1284" y="-2243"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller Spisok Tovarov-->
         <scene sceneID="PVK-Du-VwP">
             <objects>
-                <tableViewController id="FlG-9E-Q2n" sceneMemberID="viewController">
+                <tableViewController id="FlG-9E-Q2n" customClass="TableViewControllerSpisokTovarov" customModule="ComAGM" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NPY-eE-rGt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTU-QE-Tms" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37" y="-2250"/>
+            <point key="canvasLocation" x="-52" y="-2619"/>
         </scene>
         <!--ListTVC-->
         <scene sceneID="HjQ-zj-dZZ">
