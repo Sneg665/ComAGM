@@ -114,8 +114,8 @@ class TableViewControllerSpisokTovarov: UITableViewController {
     }
 
     
-   // override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       // let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
 
@@ -123,7 +123,7 @@ class TableViewControllerSpisokTovarov: UITableViewController {
      
         // Инициализируем объект ячейки с идентификатором "Cell"
         // Это тот самый идентификатор, который мы задали ячейке в сториборде
-       // let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+       let cell = tableView.dequeueReusableCell(withIdentifier: "CellTovar", for: indexPath)
         
         // Получаем объект Product под индексом равным значению indexPath.row
        // let product: Product = self.allData[indexPath.row]
@@ -134,13 +134,8 @@ class TableViewControllerSpisokTovarov: UITableViewController {
         //cell.detailTextLabel?.text  = product.type
         
         // Отдаём таблице ячейку
-       // return cell
-     
-     
-     
-     
-     
-    //}
+        return cell
+     }
  
 
     /*
