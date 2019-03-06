@@ -33,6 +33,7 @@ extension ResponseItem: Decodable {
 
 
 var kolStrok: Int = 0
+//var massRez = {}
 
 class TableViewControllerSpisokTovarov: UITableViewController {
 
@@ -113,7 +114,7 @@ class TableViewControllerSpisokTovarov: UITableViewController {
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   // override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        // let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
@@ -122,24 +123,24 @@ class TableViewControllerSpisokTovarov: UITableViewController {
      
         // Инициализируем объект ячейки с идентификатором "Cell"
         // Это тот самый идентификатор, который мы задали ячейке в сториборде
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+       // let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         // Получаем объект Product под индексом равным значению indexPath.row
-        //let product: Product = self.allData[indexPath.row]
+       // let product: Product = self.allData[indexPath.row]
         
         // Заполняем ячейку данными
-        //cell.imageView?.image       = product.getImage()
+       // cell.imageView?.image       = product.getImage()
        // cell.textLabel?.text        = product.name
         //cell.detailTextLabel?.text  = product.type
         
         // Отдаём таблице ячейку
-        //return cell
+       // return cell
      
      
      
      
      
-    }
+    //}
  
 
     /*
