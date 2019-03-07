@@ -16,6 +16,7 @@
 		DE314CA2219D601700D2EF9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE314CA1219D601700D2EF9C /* ViewController.swift */; };
 		DE314CA5219D601700D2EF9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE314CA3219D601700D2EF9C /* Main.storyboard */; };
 		DE314CAA219D601900D2EF9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE314CA8219D601900D2EF9C /* LaunchScreen.storyboard */; };
+		DE35EB0F223102ED000D1E23 /* NomenklaturaObmena.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE35EB0E223102ED000D1E23 /* NomenklaturaObmena.swift */; };
 		DE46DA0F22267C7900CCC3E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE46DA0E22267C7900CCC3E6 /* Assets.xcassets */; };
 		DE46DA112226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46DA102226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		DE314CA4219D601700D2EF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE314CA9219D601900D2EF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE314CAB219D601900D2EF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE35EB0E223102ED000D1E23 /* NomenklaturaObmena.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomenklaturaObmena.swift; sourceTree = "<group>"; };
 		DE46DA0E22267C7900CCC3E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE46DA102226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSpisokTovarov.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 				DE2B62AD220C5D86001F05D5 /* MainPage.swift */,
 				DE46DA102226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift */,
 				DE2B62A7220B1950001F05D5 /* Product.swift */,
+				DE35EB0E223102ED000D1E23 /* NomenklaturaObmena.swift */,
 				DE2B62AF220C69A0001F05D5 /* GeneralDescriptionCell.swift */,
 				DE2B62A3220AD274001F05D5 /* ListTVC.swift */,
 				DE314CA3219D601700D2EF9C /* Main.storyboard */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE2B62A4220AD274001F05D5 /* ListTVC.swift in Sources */,
+				DE35EB0F223102ED000D1E23 /* NomenklaturaObmena.swift in Sources */,
 				DE2B62A6220AD4DA001F05D5 /* DetailVC.swift in Sources */,
 				DE46DA112226A4D300CCC3E6 /* TableViewControllerSpisokTovarov.swift in Sources */,
 				DE2B62A8220B1950001F05D5 /* Product.swift in Sources */,

@@ -33,6 +33,8 @@ extension ResponseItem: Decodable {
 
 
 var kolStrok: Int = 0
+
+var znachMass = [NomenklaturaObmena]()
 //var massRez = {}
 
 class TableViewControllerSpisokTovarov: UITableViewController {
@@ -78,6 +80,16 @@ class TableViewControllerSpisokTovarov: UITableViewController {
                 //    var Description: String
                // }
 
+                for ii in 0 ..< decoded.value.count {
+                  print(decoded.value[ii])
+                }
+                
+                
+                
+                
+                
+                
+                
                 //let inputData = jsonString.data(encoding: .utf8)!
                // let inputData = (jsonString as AnyObject).data(encoding: .utf8)!
                 //let decoder = JSONDecoder()
