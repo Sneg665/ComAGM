@@ -38,7 +38,8 @@ var znachMass = [NomenklaturaObmena]()
 //var massRez = {}
 
 class TableViewControllerSpisokTovarov: UITableViewController {
-
+//var znachMass = [NomenklaturaObmena]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -82,6 +83,11 @@ class TableViewControllerSpisokTovarov: UITableViewController {
 
                 for ii in 0 ..< decoded.value.count {
                   print(decoded.value[ii])
+                   znachMass += [
+                        NomenklaturaObmena(codeNom: decoded.value[ii].code,
+                                   naimNom: decoded.value[ii].description),
+                        ]
+                   //print(znachMass)
                 }
                 
                 
@@ -138,11 +144,11 @@ class TableViewControllerSpisokTovarov: UITableViewController {
        let cell = tableView.dequeueReusableCell(withIdentifier: "CellTovar", for: indexPath)
         
         // Получаем объект Product под индексом равным значению indexPath.row
-       // let product: Product = self.allData[indexPath.row]
-        
+        let nomNom : NomenklaturaObmena = znachMass[indexPath.row]
+         //let product: GeneralDescriptionCell = self.listNavigations[indexPath.row]
         // Заполняем ячейку данными
-       // cell.imageView?.image       = product.getImage()
-       // cell.textLabel?.text        = product.name
+        //cell.imageView?.image       = product.getImage()
+        cell.textLabel?.text        = nomNom.codeNom
         //cell.detailTextLabel?.text  = product.type
         
         // Отдаём таблице ячейку
